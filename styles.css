@@ -7,6 +7,7 @@
   max-width: 1360px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: auto;
 }
 
@@ -22,14 +23,14 @@ header {
   justify-content: space-between;
   align-items: baseline;
 }
-.button {
+/* .button {
   width: 173px;
   height: 44px;
 }
 .img {
   width: 150px;
   height: 24px;
-}
+} */
 .menu {
   width: 540px;
   height: 20px;
@@ -45,11 +46,211 @@ header {
   line-height: 20px;
   color: #fff;
 }
-/* .hr {
+/* .palka {
   display: flex;
   color: #e9cd7b;
   align-items: flex-start;
 } */
 .services {
   color: #e9cd7b;
+}
+main {
+  width: 100%;
+  height: 1200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.ssilki {
+  width: 138px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 165px;
+  margin-top: 40px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #9b9fa3;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+}
+
+.h {
+  display: flex;
+  margin-left: 165px;
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+h1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 170px;
+  height: 55px;
+  font-family: "Source Sans Pro";
+  font-size: 48px;
+  line-height: 55px;
+  align-items: center;
+  color: #373f48;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.square {
+  display: flex;
+  flex-flow: wrap;
+  row-gap: 80px;
+  column-gap: 120px;
+  margin-left: 165px;
+  margin-right: 60px;
+  width: 1150px;
+  height: 525px;
+}
+.text > p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #373f48;
+}
+
+.text {
+  display: flex;
+  width: 290px;
+  height: 120px;
+  flex-direction: column;
+}
+h2 {
+  display: flex;
+  margin-bottom: 15px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 55px;
+  color: #373f48;
+  align-items: center;
+}
+hr {
+  display: flex;
+  width: 1250px;
+  margin-left: 60px;
+  margin-top: 90px;
+  color: #373f481a;
+}
+.contacts {
+  display: flex;
+  margin-left: 165px;
+  margin-top: 45px;
+  margin-right: 165px;
+  justify-content: space-between;
+}
+.AS {
+  display: flex;
+  width: 140px;
+  height: 135px;
+  flex-direction: column;
+}
+h4 {
+  margin-bottom: 15px;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #373f48;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.arefs {
+  display: flex;
+  width: 140px;
+  height: 100px;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.arefs > a {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #373f48;
+}
+
+.FS {
+  display: flex;
+  width: 100px;
+  height: 60px;
+  flex-direction: column;
+}
+.photos {
+  display: flex;
+  width: 100px;
+  height: 20px;
+  justify-content: space-between;
+}
+.number {
+  display: flex;
+  width: 170px;
+  height: 50px;
+  flex-direction: column;
+}
+.number > h4 {
+  margin-bottom: 3px;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #373f48;
+  text-shadow: none;
+}
+.number > p {
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: grey;
+}
+.contacts > button {
+  display: flex;
+  width: 200px;
+  height: 45px;
+}
+footer {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: #e6e6e6;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer > p {
+  display: flex;
+  width: 170px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  align-items: center;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #373f48;
 }
