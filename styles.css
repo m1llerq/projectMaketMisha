@@ -23,14 +23,30 @@ header {
   justify-content: space-between;
   align-items: baseline;
 }
-/* .button {
-  width: 173px;
-  height: 44px;
+header > button {
+  width: 175px;
+  height: 45px;
+  border: 1px solid #e9cd7b;
+  border-radius: 4px;
+  background: #373f48;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #e9cd7b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* mix-blend-mode: multiply; */
 }
 .img {
   width: 150px;
   height: 24px;
-} */
+}
 .menu {
   width: 540px;
   height: 20px;
@@ -41,7 +57,7 @@ header {
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
@@ -53,10 +69,11 @@ header {
 } */
 .services {
   color: #e9cd7b;
+  font-weight: 400;
 }
 main {
   width: 100%;
-  height: 1200px;
+  height: 880px;
   background-color: #fff;
   display: flex;
   justify-content: flex-start;
@@ -113,9 +130,25 @@ h1 {
   column-gap: 120px;
   margin-left: 165px;
   margin-right: 60px;
+  margin-bottom: 100px;
   width: 1150px;
   height: 525px;
 }
+/* .row1 {
+  display: flex;
+  width: 1120px;
+  height: 200px;
+}
+.row2 {
+  display: flex;
+  width: 1120px;
+  height: 110px;
+}
+.row3 {
+  display: flex;
+  width: 1120px;
+  height: 110px;
+} */
 .text > p {
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -133,6 +166,14 @@ h1 {
   height: 120px;
   flex-direction: column;
 }
+
+.textbox {
+  display: flex;
+  width: 320px;
+  height: 200px;
+  flex-direction: column;
+  align-self: flex-end;
+}
 h2 {
   display: flex;
   margin-bottom: 15px;
@@ -148,7 +189,7 @@ hr {
   display: flex;
   width: 1250px;
   margin-left: 60px;
-  margin-top: 90px;
+  margin-top: 0px;
   color: #373f481a;
 }
 .contacts {
@@ -156,12 +197,13 @@ hr {
   margin-left: 165px;
   margin-top: 45px;
   margin-right: 165px;
+  margin-bottom: 140px;
   justify-content: space-between;
 }
 .AS {
   display: flex;
   width: 140px;
-  height: 135px;
+  height: 145px;
   flex-direction: column;
 }
 h4 {
@@ -230,8 +272,20 @@ h4 {
   display: flex;
   width: 200px;
   height: 45px;
+  background: #eac55e;
+  border-radius: 4px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  line-height: 18px;
+  color: #575c61;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-footer {
+
+.bottomline {
   display: flex;
   width: 100%;
   height: 70px;
@@ -239,7 +293,8 @@ footer {
   justify-content: flex-start;
   align-items: center;
 }
-footer > p {
+
+.bottomline > p {
   display: flex;
   width: 170px;
   height: 25px;
@@ -253,4 +308,10 @@ footer > p {
   font-size: 12px;
   line-height: 26px;
   color: #373f48;
+}
+footer {
+  display: flex;
+  width: 1400px;
+  height: 380px;
+  flex-direction: column;
 }
