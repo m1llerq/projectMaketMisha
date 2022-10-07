@@ -29,6 +29,21 @@ header > button {
   border: 1px solid #e9cd7b;
   border-radius: 4px;
   background: #373f48;
+  /* font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #e9cd7b; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* mix-blend-mode: multiply; */
+}
+
+.a1 {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 600;
@@ -39,13 +54,23 @@ header > button {
   justify-content: center;
   text-transform: uppercase;
   color: #e9cd7b;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  /* mix-blend-mode: multiply; */
 }
 .img {
   width: 150px;
   height: 24px;
+}
+.menu1 {
+  width: 540px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.hr1 {
+  width: 54px;
+  height: 1px;
+  border-color: #e9cd7b;
+  margin-left: 38px;
 }
 .menu {
   width: 540px;
@@ -62,11 +87,7 @@ header > button {
   line-height: 20px;
   color: #fff;
 }
-/* .palka {
-  display: flex;
-  color: #e9cd7b;
-  align-items: flex-start;
-} */
+
 .services {
   color: #e9cd7b;
   font-weight: 400;
@@ -101,9 +122,9 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: grey;
-}
+} */
 
 .h {
   display: flex;
@@ -171,7 +192,7 @@ h2 {
   color: #373f48;
   align-items: center;
 }
-hr {
+footer > hr {
   display: flex;
   width: 1240px;
   margin-left: 60px;
@@ -255,10 +276,11 @@ h4 {
 .number > p {
   font-family: "Source Sans Pro";
   font-size: 20px;
+  font-weight: 300px;
   line-height: 26px;
   display: flex;
   align-items: center;
-  color: grey;
+  color: #373f48;
 }
 .contacts > button {
   display: flex;
@@ -271,6 +293,13 @@ h4 {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  /* font-family: "Source Sans Pro";
+  font-size: 14px;
+  line-height: 18px;
+  color: #575c61;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+.a2 {
   font-family: "Source Sans Pro";
   font-size: 14px;
   line-height: 18px;
@@ -305,7 +334,7 @@ h4 {
 footer {
   display: flex;
   width: 1360px;
-  height: 380px;
+  height: 400px;
   flex-direction: column;
   background-color: #f1f1f1;
 }
