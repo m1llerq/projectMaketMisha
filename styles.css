@@ -29,18 +29,7 @@ header > button {
   border: 1px solid #e9cd7b;
   border-radius: 4px;
   background: #373f48;
-  /* font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  color: #e9cd7b; */
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* mix-blend-mode: multiply; */
 }
 
 .a1 {
@@ -59,26 +48,17 @@ header > button {
   width: 150px;
   height: 24px;
 }
-.menu1 {
-  width: 540px;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-}
-.hr1 {
-  width: 54px;
-  height: 1px;
-  border-color: #e9cd7b;
-  margin-left: 38px;
-}
+
 .menu {
   width: 540px;
   height: 20px;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  align-items: center;
   flex-direction: row;
+}
+.menu > a {
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
@@ -86,16 +66,21 @@ header > button {
   font-size: 16px;
   line-height: 20px;
   color: #fff;
+  transition: 0.5;
 }
 
-.services {
+header > .menu > a:hover {
+  display: flex;
+  height: 44px;
+  align-items: center;
   color: #e9cd7b;
   font-weight: 400;
+  border-bottom: 1px solid #e9cd7b;
 }
+
 main {
   width: 100%;
-  height: 886px;
-  background-color: #f1f1f1;
+  background-color: #fff;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -103,7 +88,7 @@ main {
 
 .ssilki {
   width: 138px;
-  height: 20px;
+  /* height: 20px; */
   display: flex;
   justify-content: space-between;
   margin-left: 165px;
@@ -136,7 +121,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
   width: 170px;
-  height: 55px;
+  /* height: 55px; */
   font-family: "Source Sans Pro";
   font-size: 48px;
   line-height: 55px;
@@ -147,13 +132,9 @@ h1 {
 .square {
   display: flex;
   flex-flow: wrap;
-  row-gap: 80px;
-  column-gap: 120px;
-  margin-left: 165px;
-  margin-right: 60px;
-  /* margin-bottom: 100px; */
-  width: 1150px;
-  height: 525px;
+  margin-left: 120px;
+  margin-bottom: 100px;
+  max-width: 1110px;
 }
 
 .text > p {
@@ -169,15 +150,40 @@ h1 {
 
 .text {
   display: flex;
-  width: 290px;
-  height: 90px;
+  width: 370px;
   flex-direction: column;
+  padding-left: 45px;
+  padding-top: 30px;
+  padding-bottom: 27px;
+  padding-right: 27px;
 }
 
+.text:hover {
+  border: 1px solid #eac55e;
+  border-radius: 4px;
+}
+
+.text > .more-info {
+  margin-top: 22px;
+  width: 70px;
+  height: 20px;
+  opacity: 0;
+}
+.text:hover > .more-info {
+  opacity: 1;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #eac55e;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .textbox {
   display: flex;
   width: 320px;
-  height: 200px;
   flex-direction: column;
   align-self: flex-end;
 }
@@ -196,9 +202,9 @@ footer > hr {
   display: flex;
   width: 1240px;
   margin-left: 60px;
-  border: 1px solid;
-  height: 10px;
-  border-image: linear-gradient(
+  border: 1px;
+  height: 1px;
+  background-image: linear-gradient(
     270deg,
     rgba(55, 63, 72, 0.1) 0%,
     rgba(55, 63, 72, 0.3) 50.5%,
@@ -216,7 +222,6 @@ footer > hr {
 .AS {
   display: flex;
   width: 140px;
-  height: 145px;
   flex-direction: column;
 }
 h4 {
@@ -232,7 +237,6 @@ h4 {
 .arefs {
   display: flex;
   width: 140px;
-  height: 100px;
   flex-direction: column;
   row-gap: 10px;
 }
@@ -248,19 +252,16 @@ h4 {
 .FS {
   display: flex;
   width: 100px;
-  height: 60px;
   flex-direction: column;
 }
 .photos {
   display: flex;
   width: 100px;
-  height: 20px;
   justify-content: space-between;
 }
 .number {
   display: flex;
   width: 170px;
-  height: 50px;
   flex-direction: column;
 }
 .number > h4 {
@@ -334,7 +335,6 @@ h4 {
 footer {
   display: flex;
   width: 1360px;
-  height: 400px;
   flex-direction: column;
-  background-color: #f1f1f1;
+  background-color: #fff;
 }
